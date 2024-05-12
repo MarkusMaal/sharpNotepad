@@ -1,17 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Diagnostics;
 using System.Drawing.Printing;
-using System.Text.RegularExpressions;
-using System.Runtime.InteropServices;
 
 namespace sharpNotepad
 {
