@@ -1105,7 +1105,7 @@ namespace sharpNotepad
                     }
                 }
             }
-            if (textBox1.Lines[textBox1.GetLineFromCharIndex(textBox1.SelectionStart)].Replace(" ", "").StartsWith(":"))
+            if ((textBox1.Lines.Length > 0) && (textBox1.Lines[textBox1.GetLineFromCharIndex(textBox1.SelectionStart)].Replace(" ", "").StartsWith(":")))
             { 
                 updateOne(textBox1.GetLineFromCharIndex(textBox1.SelectionStart));
             }
