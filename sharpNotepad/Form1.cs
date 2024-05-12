@@ -529,10 +529,13 @@ namespace sharpNotepad
 
         void LoadTheme()
         {
-            string[] bgfg = File.ReadAllText(Environment.GetEnvironmentVariable("HOMEDRIVE").ToString() + "\\mas\\scheme.cfg").Split(';');
-            string[] bgs = bgfg[0].ToString().Split(':');
-            string[] fgs = bgfg[1].ToString().Split(':');
-            Applytheme(Color.FromArgb(Convert.ToInt32(bgs[0].ToString()), Convert.ToInt32(bgs[1].ToString()), Convert.ToInt32(bgs[2].ToString())), Color.FromArgb(Convert.ToInt32(fgs[0].ToString()), Convert.ToInt32(fgs[1].ToString()), Convert.ToInt32(fgs[2].ToString())));
+            if (File.Exists(Environment.GetEnvironmentVariable("HOMEDRIVE").ToString() + "\\mas\\scheme.cfg"))
+            {
+                string[] bgfg = File.ReadAllText(Environment.GetEnvironmentVariable("HOMEDRIVE").ToString() + "\\mas\\scheme.cfg").Split(';');
+                string[] bgs = bgfg[0].ToString().Split(':');
+                string[] fgs = bgfg[1].ToString().Split(':');
+                Applytheme(Color.FromArgb(Convert.ToInt32(bgs[0].ToString()), Convert.ToInt32(bgs[1].ToString()), Convert.ToInt32(bgs[2].ToString())), Color.FromArgb(Convert.ToInt32(fgs[0].ToString()), Convert.ToInt32(fgs[1].ToString()), Convert.ToInt32(fgs[2].ToString())));
+            }
         }
 
 
@@ -604,10 +607,14 @@ namespace sharpNotepad
              * If Program filename is not null, then display the name
              * on the windowtitle.
              */
+            tööriistadToolStripMenuItem.Enabled = false;
             if (!Directory.Exists(Environment.GetEnvironmentVariable("HOMEDRIVE") + "\\mas"))
             {
-                MessageBox.Show("Tundub, et olete käivitanud selle programmi arvutis, milles pole paigaldatud Markuse arvuti asjad. See võib mõjutada programmi funktsionaalsust.", "Pole juurutatud", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                //MessageBox.Show("Tundub, et olete käivitanud selle programmi arvutis, milles pole paigaldatud Markuse arvuti asjad. See võib mõjutada programmi funktsionaalsust.", "Pole juurutatud", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 teaveMarkuseAsjadeKohtaToolStripMenuItem.Enabled = false;
+                systemToolStripMenuItem.Enabled = false;
+                systemToolStripMenuItem.Checked = false;
+                heleToolStripMenuItem.Checked = true;
             }
             textBox1.Text = Program.text;
             if (Program.fnm != null)
