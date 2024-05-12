@@ -67,14 +67,18 @@ namespace sharpNotepad
             {
                 if (File.Exists(openDialog.FileName))
                 {
-                    if ((openDialog.FileName.Contains(".bat")) || (openDialog.FileName.Contains(".cmd")))
+                    if (!sunniKodeeringToolStripMenuItem.Checked)
                     {
-                        en = Encoding.GetEncoding("windows-1252");
-                    } else
-                    { 
-                        using (StreamReader sr = new StreamReader(openDialog.FileName, true))
+                        if ((openDialog.FileName.Contains(".bat")) || (openDialog.FileName.Contains(".cmd")))
                         {
-                            en = sr.CurrentEncoding;
+                            en = Encoding.GetEncoding("windows-1252");
+                        }
+                        else
+                        {
+                            using (StreamReader sr = new StreamReader(openDialog.FileName, true))
+                            {
+                                en = sr.CurrentEncoding;
+                            }
                         }
                     }
                     string fileconent = File.ReadAllText(openDialog.FileName, en);

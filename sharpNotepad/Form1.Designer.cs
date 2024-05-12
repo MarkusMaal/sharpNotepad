@@ -44,6 +44,18 @@
             this.prindiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.leheHäälestamineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
+            this.reapoolitusToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.windowsCRLFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.unixLFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.kodeeringToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aNSIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.unicodeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.uTF8ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.standardASCIIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.uTF7ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.uTF32ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sunniKodeeringToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.openInMicrosoftNotepadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -56,6 +68,13 @@
             this.sildidToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.laadiMarkeridUuestiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kuvaUnicodeSümbolidToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator13 = new System.Windows.Forms.ToolStripSeparator();
+            this.tööriistadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pildiTeisendamineASCIIksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.wordArtGeneraatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.korrigeeriTabulatsioonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.failisirvijaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.koodinäidisedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.prefiksiJaSuffiksiLisamineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -94,6 +113,8 @@
             this.aboutNotepadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.teaveMarkuseAsjadeKohtaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusBar = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel5 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel6 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
@@ -111,26 +132,6 @@
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.kodeeringToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reapoolitusToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
-            this.aNSIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.unicodeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.uTF8ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.standardASCIIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.windowsCRLFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.unixLFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripStatusLabel5 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel6 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.uTF7ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.uTF32ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator13 = new System.Windows.Forms.ToolStripSeparator();
-            this.tööriistadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pildiTeisendamineASCIIksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.wordArtGeneraatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.korrigeeriTabulatsioonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.failisirvijaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.koodinäidisedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuBar.SuspendLayout();
             this.statusBar.SuspendLayout();
             this.SuspendLayout();
@@ -169,6 +170,7 @@
             // menuBar
             // 
             this.menuBar.BackColor = System.Drawing.SystemColors.Menu;
+            this.menuBar.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.batchToolStripMenuItem,
@@ -178,7 +180,6 @@
             this.helpToolStripMenuItem});
             this.menuBar.Location = new System.Drawing.Point(0, 0);
             this.menuBar.Name = "menuBar";
-            this.menuBar.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
             this.menuBar.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
             this.menuBar.Size = new System.Drawing.Size(1023, 24);
             this.menuBar.TabIndex = 1;
@@ -203,6 +204,7 @@
             this.toolStripSeparator12,
             this.reapoolitusToolStripMenuItem,
             this.kodeeringToolStripMenuItem,
+            this.sunniKodeeringToolStripMenuItem,
             this.toolStripSeparator2,
             this.openInMicrosoftNotepadToolStripMenuItem,
             this.exitToolStripMenuItem});
@@ -218,20 +220,20 @@
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F2;
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(250, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(308, 22);
             this.newToolStripMenuItem.Text = "Uus";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
             // toolStripSeparator10
             // 
             this.toolStripSeparator10.Name = "toolStripSeparator10";
-            this.toolStripSeparator10.Size = new System.Drawing.Size(247, 6);
+            this.toolStripSeparator10.Size = new System.Drawing.Size(305, 6);
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(250, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(308, 22);
             this.openToolStripMenuItem.Text = "Ava";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
@@ -240,21 +242,21 @@
             this.openBatchFileToolStripMenuItem.Name = "openBatchFileToolStripMenuItem";
             this.openBatchFileToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt) 
             | System.Windows.Forms.Keys.O)));
-            this.openBatchFileToolStripMenuItem.Size = new System.Drawing.Size(250, 22);
+            this.openBatchFileToolStripMenuItem.Size = new System.Drawing.Size(308, 22);
             this.openBatchFileToolStripMenuItem.Text = "Ava pakkfail";
             this.openBatchFileToolStripMenuItem.Click += new System.EventHandler(this.openBatchFileToolStripMenuItem_Click);
             // 
             // toolStripSeparator9
             // 
             this.toolStripSeparator9.Name = "toolStripSeparator9";
-            this.toolStripSeparator9.Size = new System.Drawing.Size(247, 6);
+            this.toolStripSeparator9.Size = new System.Drawing.Size(305, 6);
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
             this.saveAsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.S)));
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(250, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(308, 22);
             this.saveAsToolStripMenuItem.Text = "Salvesta nimega..";
             this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
@@ -263,20 +265,20 @@
             this.saveToolStripMenuItem.Enabled = false;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(250, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(308, 22);
             this.saveToolStripMenuItem.Text = "Salvesta";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(247, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(305, 6);
             // 
             // prindiToolStripMenuItem
             // 
             this.prindiToolStripMenuItem.Name = "prindiToolStripMenuItem";
             this.prindiToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.prindiToolStripMenuItem.Size = new System.Drawing.Size(250, 22);
+            this.prindiToolStripMenuItem.Size = new System.Drawing.Size(308, 22);
             this.prindiToolStripMenuItem.Text = "Prindi";
             this.prindiToolStripMenuItem.Click += new System.EventHandler(this.prindiToolStripMenuItem_Click);
             // 
@@ -285,7 +287,7 @@
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.P)));
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(250, 22);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(308, 22);
             this.toolStripMenuItem1.Text = "Printimise eelvaade";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
@@ -293,19 +295,125 @@
             // 
             this.leheHäälestamineToolStripMenuItem.Name = "leheHäälestamineToolStripMenuItem";
             this.leheHäälestamineToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.P)));
-            this.leheHäälestamineToolStripMenuItem.Size = new System.Drawing.Size(250, 22);
+            this.leheHäälestamineToolStripMenuItem.Size = new System.Drawing.Size(308, 22);
             this.leheHäälestamineToolStripMenuItem.Text = "Lehe häälestamine";
             this.leheHäälestamineToolStripMenuItem.Click += new System.EventHandler(this.leheHäälestamineToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator12
+            // 
+            this.toolStripSeparator12.Name = "toolStripSeparator12";
+            this.toolStripSeparator12.Size = new System.Drawing.Size(305, 6);
+            // 
+            // reapoolitusToolStripMenuItem
+            // 
+            this.reapoolitusToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.windowsCRLFToolStripMenuItem,
+            this.unixLFToolStripMenuItem});
+            this.reapoolitusToolStripMenuItem.Name = "reapoolitusToolStripMenuItem";
+            this.reapoolitusToolStripMenuItem.Size = new System.Drawing.Size(308, 22);
+            this.reapoolitusToolStripMenuItem.Text = "Reavahetuse vorming";
+            this.reapoolitusToolStripMenuItem.DropDownOpening += new System.EventHandler(this.reapoolitusToolStripMenuItem_DropDownOpening);
+            // 
+            // windowsCRLFToolStripMenuItem
+            // 
+            this.windowsCRLFToolStripMenuItem.CheckOnClick = true;
+            this.windowsCRLFToolStripMenuItem.Name = "windowsCRLFToolStripMenuItem";
+            this.windowsCRLFToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
+            this.windowsCRLFToolStripMenuItem.Text = "Windows (CRLF)";
+            this.windowsCRLFToolStripMenuItem.CheckStateChanged += new System.EventHandler(this.windowsCRLFToolStripMenuItem_CheckStateChanged);
+            this.windowsCRLFToolStripMenuItem.Click += new System.EventHandler(this.windowsCRLFToolStripMenuItem_Click);
+            // 
+            // unixLFToolStripMenuItem
+            // 
+            this.unixLFToolStripMenuItem.Checked = true;
+            this.unixLFToolStripMenuItem.CheckOnClick = true;
+            this.unixLFToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.unixLFToolStripMenuItem.Name = "unixLFToolStripMenuItem";
+            this.unixLFToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
+            this.unixLFToolStripMenuItem.Text = "Unix (LF)";
+            this.unixLFToolStripMenuItem.CheckStateChanged += new System.EventHandler(this.unixLFToolStripMenuItem_CheckStateChanged);
+            this.unixLFToolStripMenuItem.Click += new System.EventHandler(this.unixLFToolStripMenuItem_Click);
+            // 
+            // kodeeringToolStripMenuItem
+            // 
+            this.kodeeringToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aNSIToolStripMenuItem,
+            this.unicodeToolStripMenuItem,
+            this.uTF8ToolStripMenuItem,
+            this.standardASCIIToolStripMenuItem,
+            this.uTF7ToolStripMenuItem,
+            this.uTF32ToolStripMenuItem});
+            this.kodeeringToolStripMenuItem.Name = "kodeeringToolStripMenuItem";
+            this.kodeeringToolStripMenuItem.Size = new System.Drawing.Size(308, 22);
+            this.kodeeringToolStripMenuItem.Text = "Kodeering";
+            this.kodeeringToolStripMenuItem.DropDownOpening += new System.EventHandler(this.kodeeringToolStripMenuItem_DropDownOpening);
+            // 
+            // aNSIToolStripMenuItem
+            // 
+            this.aNSIToolStripMenuItem.CheckOnClick = true;
+            this.aNSIToolStripMenuItem.Name = "aNSIToolStripMenuItem";
+            this.aNSIToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.aNSIToolStripMenuItem.Text = "ANSI";
+            this.aNSIToolStripMenuItem.Click += new System.EventHandler(this.aNSIToolStripMenuItem_Click);
+            // 
+            // unicodeToolStripMenuItem
+            // 
+            this.unicodeToolStripMenuItem.CheckOnClick = true;
+            this.unicodeToolStripMenuItem.Name = "unicodeToolStripMenuItem";
+            this.unicodeToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.unicodeToolStripMenuItem.Text = "Täielik unicode";
+            this.unicodeToolStripMenuItem.Click += new System.EventHandler(this.unicodeToolStripMenuItem_Click);
+            // 
+            // uTF8ToolStripMenuItem
+            // 
+            this.uTF8ToolStripMenuItem.Checked = true;
+            this.uTF8ToolStripMenuItem.CheckOnClick = true;
+            this.uTF8ToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.uTF8ToolStripMenuItem.Name = "uTF8ToolStripMenuItem";
+            this.uTF8ToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.uTF8ToolStripMenuItem.Text = "UTF-8";
+            this.uTF8ToolStripMenuItem.Click += new System.EventHandler(this.uTF8ToolStripMenuItem_Click);
+            // 
+            // standardASCIIToolStripMenuItem
+            // 
+            this.standardASCIIToolStripMenuItem.CheckOnClick = true;
+            this.standardASCIIToolStripMenuItem.Name = "standardASCIIToolStripMenuItem";
+            this.standardASCIIToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.standardASCIIToolStripMenuItem.Text = "Standard ASCII";
+            this.standardASCIIToolStripMenuItem.Click += new System.EventHandler(this.standardASCIIToolStripMenuItem_Click);
+            // 
+            // uTF7ToolStripMenuItem
+            // 
+            this.uTF7ToolStripMenuItem.CheckOnClick = true;
+            this.uTF7ToolStripMenuItem.Name = "uTF7ToolStripMenuItem";
+            this.uTF7ToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.uTF7ToolStripMenuItem.Text = "UTF-7";
+            this.uTF7ToolStripMenuItem.Click += new System.EventHandler(this.uTF7ToolStripMenuItem_Click);
+            // 
+            // uTF32ToolStripMenuItem
+            // 
+            this.uTF32ToolStripMenuItem.CheckOnClick = true;
+            this.uTF32ToolStripMenuItem.Name = "uTF32ToolStripMenuItem";
+            this.uTF32ToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.uTF32ToolStripMenuItem.Text = "UTF-32";
+            this.uTF32ToolStripMenuItem.Click += new System.EventHandler(this.uTF32ToolStripMenuItem_Click);
+            // 
+            // sunniKodeeringToolStripMenuItem
+            // 
+            this.sunniKodeeringToolStripMenuItem.CheckOnClick = true;
+            this.sunniKodeeringToolStripMenuItem.Name = "sunniKodeeringToolStripMenuItem";
+            this.sunniKodeeringToolStripMenuItem.Size = new System.Drawing.Size(308, 22);
+            this.sunniKodeeringToolStripMenuItem.Text = "Keela automaatne kodeeringu tuvastamine";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(247, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(305, 6);
             // 
             // openInMicrosoftNotepadToolStripMenuItem
             // 
             this.openInMicrosoftNotepadToolStripMenuItem.Name = "openInMicrosoftNotepadToolStripMenuItem";
-            this.openInMicrosoftNotepadToolStripMenuItem.Size = new System.Drawing.Size(250, 22);
+            this.openInMicrosoftNotepadToolStripMenuItem.Size = new System.Drawing.Size(308, 22);
             this.openInMicrosoftNotepadToolStripMenuItem.Text = "Ava Notepad\'is";
             this.openInMicrosoftNotepadToolStripMenuItem.Click += new System.EventHandler(this.openInMicrosoftNotepadToolStripMenuItem_Click);
             // 
@@ -313,7 +421,7 @@
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(250, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(308, 22);
             this.exitToolStripMenuItem.Text = "Sulge";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -390,6 +498,54 @@
             this.kuvaUnicodeSümbolidToolStripMenuItem.Text = "Kuva Unicode sümbolid";
             this.kuvaUnicodeSümbolidToolStripMenuItem.CheckedChanged += new System.EventHandler(this.kuvaUnicodeSümbolidToolStripMenuItem_CheckedChanged);
             this.kuvaUnicodeSümbolidToolStripMenuItem.Click += new System.EventHandler(this.kuvaUnicodeSümbolidToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator13
+            // 
+            this.toolStripSeparator13.Name = "toolStripSeparator13";
+            this.toolStripSeparator13.Size = new System.Drawing.Size(229, 6);
+            // 
+            // tööriistadToolStripMenuItem
+            // 
+            this.tööriistadToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pildiTeisendamineASCIIksToolStripMenuItem,
+            this.wordArtGeneraatorToolStripMenuItem,
+            this.korrigeeriTabulatsioonToolStripMenuItem,
+            this.failisirvijaToolStripMenuItem,
+            this.koodinäidisedToolStripMenuItem});
+            this.tööriistadToolStripMenuItem.Name = "tööriistadToolStripMenuItem";
+            this.tööriistadToolStripMenuItem.Size = new System.Drawing.Size(232, 22);
+            this.tööriistadToolStripMenuItem.Text = "Tööriistad";
+            // 
+            // pildiTeisendamineASCIIksToolStripMenuItem
+            // 
+            this.pildiTeisendamineASCIIksToolStripMenuItem.Name = "pildiTeisendamineASCIIksToolStripMenuItem";
+            this.pildiTeisendamineASCIIksToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.pildiTeisendamineASCIIksToolStripMenuItem.Text = "Teisenda pilt tekstiks";
+            // 
+            // wordArtGeneraatorToolStripMenuItem
+            // 
+            this.wordArtGeneraatorToolStripMenuItem.Name = "wordArtGeneraatorToolStripMenuItem";
+            this.wordArtGeneraatorToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.wordArtGeneraatorToolStripMenuItem.Text = "WordArt generaator";
+            // 
+            // korrigeeriTabulatsioonToolStripMenuItem
+            // 
+            this.korrigeeriTabulatsioonToolStripMenuItem.Name = "korrigeeriTabulatsioonToolStripMenuItem";
+            this.korrigeeriTabulatsioonToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.korrigeeriTabulatsioonToolStripMenuItem.Text = "Korrigeeri tabulatsioon";
+            this.korrigeeriTabulatsioonToolStripMenuItem.Click += new System.EventHandler(this.korrigeeriTabulatsioonToolStripMenuItem_Click);
+            // 
+            // failisirvijaToolStripMenuItem
+            // 
+            this.failisirvijaToolStripMenuItem.Name = "failisirvijaToolStripMenuItem";
+            this.failisirvijaToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.failisirvijaToolStripMenuItem.Text = "Failisirvija";
+            // 
+            // koodinäidisedToolStripMenuItem
+            // 
+            this.koodinäidisedToolStripMenuItem.Name = "koodinäidisedToolStripMenuItem";
+            this.koodinäidisedToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.koodinäidisedToolStripMenuItem.Text = "Sümbolite teisendaja";
             // 
             // editToolStripMenuItem
             // 
@@ -730,6 +886,7 @@
             this.statusBar.AllowMerge = false;
             this.statusBar.AutoSize = false;
             this.statusBar.Font = new System.Drawing.Font("Segoe UI", 7F);
+            this.statusBar.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel5,
             this.toolStripStatusLabel6,
@@ -745,6 +902,22 @@
             this.statusBar.Size = new System.Drawing.Size(1023, 16);
             this.statusBar.TabIndex = 2;
             this.statusBar.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel5
+            // 
+            this.toolStripStatusLabel5.Name = "toolStripStatusLabel5";
+            this.toolStripStatusLabel5.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.toolStripStatusLabel5.Size = new System.Drawing.Size(86, 12);
+            this.toolStripStatusLabel5.Text = "Kodeering: ANSI";
+            this.toolStripStatusLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // toolStripStatusLabel6
+            // 
+            this.toolStripStatusLabel6.Name = "toolStripStatusLabel6";
+            this.toolStripStatusLabel6.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.toolStripStatusLabel6.Size = new System.Drawing.Size(110, 12);
+            this.toolStripStatusLabel6.Text = "Reapoolitus: Unix (LF)";
+            this.toolStripStatusLabel6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // toolStripStatusLabel1
             // 
@@ -876,169 +1049,6 @@
             // timer2
             // 
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
-            // 
-            // kodeeringToolStripMenuItem
-            // 
-            this.kodeeringToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aNSIToolStripMenuItem,
-            this.unicodeToolStripMenuItem,
-            this.uTF8ToolStripMenuItem,
-            this.standardASCIIToolStripMenuItem,
-            this.uTF7ToolStripMenuItem,
-            this.uTF32ToolStripMenuItem});
-            this.kodeeringToolStripMenuItem.Name = "kodeeringToolStripMenuItem";
-            this.kodeeringToolStripMenuItem.Size = new System.Drawing.Size(250, 22);
-            this.kodeeringToolStripMenuItem.Text = "Kodeering";
-            this.kodeeringToolStripMenuItem.DropDownOpening += new System.EventHandler(this.kodeeringToolStripMenuItem_DropDownOpening);
-            // 
-            // reapoolitusToolStripMenuItem
-            // 
-            this.reapoolitusToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.windowsCRLFToolStripMenuItem,
-            this.unixLFToolStripMenuItem});
-            this.reapoolitusToolStripMenuItem.Name = "reapoolitusToolStripMenuItem";
-            this.reapoolitusToolStripMenuItem.Size = new System.Drawing.Size(250, 22);
-            this.reapoolitusToolStripMenuItem.Text = "Reavahetuse vorming";
-            this.reapoolitusToolStripMenuItem.DropDownOpening += new System.EventHandler(this.reapoolitusToolStripMenuItem_DropDownOpening);
-            // 
-            // toolStripSeparator12
-            // 
-            this.toolStripSeparator12.Name = "toolStripSeparator12";
-            this.toolStripSeparator12.Size = new System.Drawing.Size(247, 6);
-            // 
-            // aNSIToolStripMenuItem
-            // 
-            this.aNSIToolStripMenuItem.CheckOnClick = true;
-            this.aNSIToolStripMenuItem.Name = "aNSIToolStripMenuItem";
-            this.aNSIToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.aNSIToolStripMenuItem.Text = "ANSI";
-            this.aNSIToolStripMenuItem.Click += new System.EventHandler(this.aNSIToolStripMenuItem_Click);
-            // 
-            // unicodeToolStripMenuItem
-            // 
-            this.unicodeToolStripMenuItem.CheckOnClick = true;
-            this.unicodeToolStripMenuItem.Name = "unicodeToolStripMenuItem";
-            this.unicodeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.unicodeToolStripMenuItem.Text = "Täielik unicode";
-            this.unicodeToolStripMenuItem.Click += new System.EventHandler(this.unicodeToolStripMenuItem_Click);
-            // 
-            // uTF8ToolStripMenuItem
-            // 
-            this.uTF8ToolStripMenuItem.Checked = true;
-            this.uTF8ToolStripMenuItem.CheckOnClick = true;
-            this.uTF8ToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.uTF8ToolStripMenuItem.Name = "uTF8ToolStripMenuItem";
-            this.uTF8ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.uTF8ToolStripMenuItem.Text = "UTF-8";
-            this.uTF8ToolStripMenuItem.Click += new System.EventHandler(this.uTF8ToolStripMenuItem_Click);
-            // 
-            // standardASCIIToolStripMenuItem
-            // 
-            this.standardASCIIToolStripMenuItem.CheckOnClick = true;
-            this.standardASCIIToolStripMenuItem.Name = "standardASCIIToolStripMenuItem";
-            this.standardASCIIToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.standardASCIIToolStripMenuItem.Text = "Standard ASCII";
-            this.standardASCIIToolStripMenuItem.Click += new System.EventHandler(this.standardASCIIToolStripMenuItem_Click);
-            // 
-            // windowsCRLFToolStripMenuItem
-            // 
-            this.windowsCRLFToolStripMenuItem.CheckOnClick = true;
-            this.windowsCRLFToolStripMenuItem.Name = "windowsCRLFToolStripMenuItem";
-            this.windowsCRLFToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.windowsCRLFToolStripMenuItem.Text = "Windows (CRLF)";
-            this.windowsCRLFToolStripMenuItem.CheckStateChanged += new System.EventHandler(this.windowsCRLFToolStripMenuItem_CheckStateChanged);
-            this.windowsCRLFToolStripMenuItem.Click += new System.EventHandler(this.windowsCRLFToolStripMenuItem_Click);
-            // 
-            // unixLFToolStripMenuItem
-            // 
-            this.unixLFToolStripMenuItem.Checked = true;
-            this.unixLFToolStripMenuItem.CheckOnClick = true;
-            this.unixLFToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.unixLFToolStripMenuItem.Name = "unixLFToolStripMenuItem";
-            this.unixLFToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.unixLFToolStripMenuItem.Text = "Unix (LF)";
-            this.unixLFToolStripMenuItem.CheckStateChanged += new System.EventHandler(this.unixLFToolStripMenuItem_CheckStateChanged);
-            this.unixLFToolStripMenuItem.Click += new System.EventHandler(this.unixLFToolStripMenuItem_Click);
-            // 
-            // toolStripStatusLabel5
-            // 
-            this.toolStripStatusLabel5.Name = "toolStripStatusLabel5";
-            this.toolStripStatusLabel5.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.toolStripStatusLabel5.Size = new System.Drawing.Size(86, 12);
-            this.toolStripStatusLabel5.Text = "Kodeering: ANSI";
-            this.toolStripStatusLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // toolStripStatusLabel6
-            // 
-            this.toolStripStatusLabel6.Name = "toolStripStatusLabel6";
-            this.toolStripStatusLabel6.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.toolStripStatusLabel6.Size = new System.Drawing.Size(110, 12);
-            this.toolStripStatusLabel6.Text = "Reapoolitus: Unix (LF)";
-            this.toolStripStatusLabel6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // uTF7ToolStripMenuItem
-            // 
-            this.uTF7ToolStripMenuItem.CheckOnClick = true;
-            this.uTF7ToolStripMenuItem.Name = "uTF7ToolStripMenuItem";
-            this.uTF7ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.uTF7ToolStripMenuItem.Text = "UTF-7";
-            this.uTF7ToolStripMenuItem.Click += new System.EventHandler(this.uTF7ToolStripMenuItem_Click);
-            // 
-            // uTF32ToolStripMenuItem
-            // 
-            this.uTF32ToolStripMenuItem.CheckOnClick = true;
-            this.uTF32ToolStripMenuItem.Name = "uTF32ToolStripMenuItem";
-            this.uTF32ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.uTF32ToolStripMenuItem.Text = "UTF-32";
-            this.uTF32ToolStripMenuItem.Click += new System.EventHandler(this.uTF32ToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator13
-            // 
-            this.toolStripSeparator13.Name = "toolStripSeparator13";
-            this.toolStripSeparator13.Size = new System.Drawing.Size(229, 6);
-            // 
-            // tööriistadToolStripMenuItem
-            // 
-            this.tööriistadToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.pildiTeisendamineASCIIksToolStripMenuItem,
-            this.wordArtGeneraatorToolStripMenuItem,
-            this.korrigeeriTabulatsioonToolStripMenuItem,
-            this.failisirvijaToolStripMenuItem,
-            this.koodinäidisedToolStripMenuItem});
-            this.tööriistadToolStripMenuItem.Name = "tööriistadToolStripMenuItem";
-            this.tööriistadToolStripMenuItem.Size = new System.Drawing.Size(232, 22);
-            this.tööriistadToolStripMenuItem.Text = "Tööriistad";
-            // 
-            // pildiTeisendamineASCIIksToolStripMenuItem
-            // 
-            this.pildiTeisendamineASCIIksToolStripMenuItem.Name = "pildiTeisendamineASCIIksToolStripMenuItem";
-            this.pildiTeisendamineASCIIksToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
-            this.pildiTeisendamineASCIIksToolStripMenuItem.Text = "Teisenda pilt tekstiks";
-            // 
-            // wordArtGeneraatorToolStripMenuItem
-            // 
-            this.wordArtGeneraatorToolStripMenuItem.Name = "wordArtGeneraatorToolStripMenuItem";
-            this.wordArtGeneraatorToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
-            this.wordArtGeneraatorToolStripMenuItem.Text = "WordArt generaator";
-            // 
-            // korrigeeriTabulatsioonToolStripMenuItem
-            // 
-            this.korrigeeriTabulatsioonToolStripMenuItem.Name = "korrigeeriTabulatsioonToolStripMenuItem";
-            this.korrigeeriTabulatsioonToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
-            this.korrigeeriTabulatsioonToolStripMenuItem.Text = "Korrigeeri tabulatsioon";
-            this.korrigeeriTabulatsioonToolStripMenuItem.Click += new System.EventHandler(this.korrigeeriTabulatsioonToolStripMenuItem_Click);
-            // 
-            // failisirvijaToolStripMenuItem
-            // 
-            this.failisirvijaToolStripMenuItem.Name = "failisirvijaToolStripMenuItem";
-            this.failisirvijaToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
-            this.failisirvijaToolStripMenuItem.Text = "Failisirvija";
-            // 
-            // koodinäidisedToolStripMenuItem
-            // 
-            this.koodinäidisedToolStripMenuItem.Name = "koodinäidisedToolStripMenuItem";
-            this.koodinäidisedToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
-            this.koodinäidisedToolStripMenuItem.Text = "Sümbolite teisendaja";
             // 
             // Form1
             // 
@@ -1172,6 +1182,7 @@
         private System.Windows.Forms.ToolStripMenuItem korrigeeriTabulatsioonToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem failisirvijaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem koodinäidisedToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sunniKodeeringToolStripMenuItem;
     }
 }
 
