@@ -14,6 +14,7 @@ namespace sharpNotepad
         public static replace changeform = new replace();
         public static presuff ps = new presuff();
         public static AboutBox1 ab = new AboutBox1();
+        public static bool dev = false;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>

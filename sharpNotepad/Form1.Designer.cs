@@ -68,7 +68,6 @@
             this.sildidToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.laadiMarkeridUuestiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kuvaUnicodeSümbolidToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator13 = new System.Windows.Forms.ToolStripSeparator();
             this.tööriistadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pildiTeisendamineASCIIksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.wordArtGeneraatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -436,7 +435,6 @@
             this.sildidToolStripMenuItem,
             this.laadiMarkeridUuestiToolStripMenuItem,
             this.kuvaUnicodeSümbolidToolStripMenuItem,
-            this.toolStripSeparator13,
             this.tööriistadToolStripMenuItem});
             this.batchToolStripMenuItem.ForeColor = System.Drawing.Color.Silver;
             this.batchToolStripMenuItem.Name = "batchToolStripMenuItem";
@@ -498,11 +496,6 @@
             this.kuvaUnicodeSümbolidToolStripMenuItem.Text = "Kuva Unicode sümbolid";
             this.kuvaUnicodeSümbolidToolStripMenuItem.CheckedChanged += new System.EventHandler(this.kuvaUnicodeSümbolidToolStripMenuItem_CheckedChanged);
             this.kuvaUnicodeSümbolidToolStripMenuItem.Click += new System.EventHandler(this.kuvaUnicodeSümbolidToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator13
-            // 
-            this.toolStripSeparator13.Name = "toolStripSeparator13";
-            this.toolStripSeparator13.Size = new System.Drawing.Size(229, 6);
             // 
             // tööriistadToolStripMenuItem
             // 
@@ -1175,7 +1168,6 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel6;
         private System.Windows.Forms.ToolStripMenuItem uTF7ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem uTF32ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator13;
         private System.Windows.Forms.ToolStripMenuItem tööriistadToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pildiTeisendamineASCIIksToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem wordArtGeneraatorToolStripMenuItem;

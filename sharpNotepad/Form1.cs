@@ -601,7 +601,7 @@ namespace sharpNotepad
              * If Program filename is not null, then display the name
              * on the windowtitle.
              */
-            tööriistadToolStripMenuItem.Enabled = false;
+            tööriistadToolStripMenuItem.Visible = Program.dev;
             if (!Directory.Exists(Environment.GetEnvironmentVariable("HOMEDRIVE") + "\\mas"))
             {
                 //MessageBox.Show("Tundub, et olete käivitanud selle programmi arvutis, milles pole paigaldatud Markuse arvuti asjad. See võib mõjutada programmi funktsionaalsust.", "Pole juurutatud", MessageBoxButtons.OK, MessageBoxIcon.Warning);
